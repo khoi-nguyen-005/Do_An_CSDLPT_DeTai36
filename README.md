@@ -53,6 +53,8 @@ Yêu cầu tiên quyết
     uvicorn participant:app --host 127.0.0.1 --port 8002 --reload
   - Chạy Participant 3:
     uvicorn participant:app --host 127.0.0.1 --port 8003 --reload
+
+    
   *Bước 3: Cài đặt và khởi chạy Giao diện Frontend (ReactJS)
     Mở một Terminal mới, di chuyển vào thư mục frontend:
     cd frontend
