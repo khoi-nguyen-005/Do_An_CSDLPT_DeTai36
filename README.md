@@ -36,9 +36,13 @@ Do_An_Phan_Tan_De_Tai_36/
 Yêu cầu tiên quyết
 - Đã cài đặt Python 3.x
 - Đã cài đặt Node.js (để chạy Frontend React)
+
+ 
   *Bước 1: Cài đặt thư viện cho Backend (Python)
   Mở Terminal tại thư mục gốc và chạy lệnh:
   pip install fastapi uvicorn requests python-multipart
+
+  
   *Bước 2: Khởi chạy các nút mạng Backend
   Mở 4 cửa sổ Terminal độc lập và chạy các lệnh sau:
   - Chạy Coordinator:
@@ -55,7 +59,7 @@ Yêu cầu tiên quyết
     npm install
     npm run dev
     Sau đó truy cập đường dẫn hiển thị trên terminal (thường là http://localhost:5173) để mở giao diện Monitor điều khiển.
-  ## 4. Các kịch bản thử nghiệm hệ thống (Demo Scenarios)
+## 4. Các kịch bản thử nghiệm hệ thống (Demo Scenarios)
   Hệ thống hỗ trợ thực hiện trực quan 3 kịch bản cốt lõi ngay trên giao diện Web Monitor:
   - Kịch bản 1 (Lý tưởng): Tiến hành đặt vé bình thường, các nút phản hồi đồng thuận, Coordinator phát lệnh COMMIT thành công
   - Kịch bản 2 (Giả lập lỗi sập điều phối - CTP): Bấm nút giả lập sập mạng, Coordinator crash đột ngột sau giai đoạn 1. Các trạm nhánh tự động kích hoạt giao thức CTP thông qua cổng ngang hàng /termination-query, nhận biết hệ thống bị nghẽn và đồng loạt chuyển sang trạng thái đóng băng BLOCKED để bảo vệ dữ liệu.
